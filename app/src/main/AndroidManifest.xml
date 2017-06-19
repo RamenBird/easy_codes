@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ramenbird.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".widget_practice.CommonWidgetPractise"
+            android:label="CommonWidgetPractise"/>
+        <activity
+            android:name=".widget_practice.recyclerview.RecylerViewPractice"
+            android:exported="true"
+            android:label="RecylerViewPractice"/>
+        <activity
+            android:name=".widget_practice.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewOutofParent"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".anime_study.AnimeTest1Activity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".db_study.DbTestActivity1"
+            android:exported="true"/>
+        <activity
+            android:name=".widget_practice.recyclerview.RecyclerViewPractise2"
+            android:exported="true"/>
+        <activity android:name=".anime_study.ObjectAnimatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

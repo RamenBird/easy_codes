@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="240px"
+            android:layout_height="240px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/oakley_square_200"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="314px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="34px"
+            android:layout_toRightOf="@id/image1"
+            android:maxLines="2"
+            android:text="Labrador Retreiver"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:paddingTop="30px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="314px"
+            android:layout_height="314px"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/oakley_square_200"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="314px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36px"
+            android:maxLines="2"
+            android:text="Labrador Retreiver"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"/>
+
+</FrameLayout>

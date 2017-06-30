@@ -12,17 +12,19 @@
             android:name=".widget_practice.CommonWidgetPractise"
             android:label="CommonWidgetPractise"/>
         <activity
-            android:name=".widget_practice.recyclerview.RecylerViewPractice"
+            android:name=".widget_practice.recycler_view.RecylerViewPractice"
             android:exported="true"
-            android:label="RecylerViewPractice"/>
-        <activity
-            android:name=".widget_practice.MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:label="As"/>
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".widget_practice.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
         <activity
             android:name=".ViewOutofParent"
@@ -36,13 +38,13 @@
             android:name=".db_study.DbTestActivity1"
             android:exported="true"/>
         <activity
-            android:name=".widget_practice.recyclerview.RecyclerViewPractise2"
+            android:name=".widget_practice.recycler_view.RecyclerViewPractise2"
             android:exported="true"/>
         <activity android:name=".anime_study.ObjectAnimatorActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        </activity>
+        <activity android:name=".fragment_do.FragmentActivity1"
+                  android:exported="true">
+
         </activity>
     </application>
 

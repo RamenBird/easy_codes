@@ -1,4 +1,4 @@
-package com.example.ramenbird.myapplication.widget_practice.recyclerview;
+package com.example.ramenbird.myapplication.widget_practice.recycler_view;
 
 import android.app.Activity;
 import android.graphics.Canvas;

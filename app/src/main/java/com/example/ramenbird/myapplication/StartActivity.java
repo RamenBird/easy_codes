@@ -17,7 +17,8 @@ import com.example.ramenbird.myapplication.widget_practice.recycler_view.Recycle
 
 public class StartActivity extends AppCompatActivity {
     static final Object[] w1 = new Object[]{
-           "recycler view animator", RecyclerViewPractise2.class
+           "recycler view animator", RecyclerViewPractise2.class,
+           "auto input method pop up", AutoFocusActivity.class
     };
 
     @Override

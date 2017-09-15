@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ramenbird.myapplication.widget_practice.recycler_view.RecyclerViewPractise2;
 
@@ -18,7 +19,8 @@ import com.example.ramenbird.myapplication.widget_practice.recycler_view.Recycle
 public class StartActivity extends AppCompatActivity {
     static final Object[] w1 = new Object[]{
            "recycler view animator", RecyclerViewPractise2.class,
-           "auto input method pop up", AutoFocusActivity.class
+           "auto input method pop up", AutoFocusActivity.class,
+           "how is on click called", Main2Activity.class
     };
 
     @Override
@@ -49,6 +51,12 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public int getItemCount() {
                 return w1.length / 2;
+            }
+        });
+        recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(StartActivity.this, "123", Toast.LENGTH_SHORT).show();
             }
         });
     }

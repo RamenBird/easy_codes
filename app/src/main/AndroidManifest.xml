@@ -9,9 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".widget_practice.CommonWidgetPractise"
-            android:label="CommonWidgetPractise"/>
-        <activity
             android:name=".widget_practice.recycler_view.RecylerViewPractice"
             android:exported="true"
             android:label="As"/>
@@ -23,27 +20,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".widget_practice.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
-        <activity
-            android:name=".anime_study.AnimeTest1Activity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
-            android:name=".db_study.DbTestActivity1"
-            android:exported="true"/>
+
         <activity
             android:name=".widget_practice.recycler_view.RecyclerViewPractise2"
             android:exported="true"/>
-        <activity android:name=".anime_study.ObjectAnimatorActivity">
-        </activity>
-        <activity
-            android:name=".fragment_do.FragmentActivity1"
-            android:exported="true">
-        </activity>
-        <activity android:name=".AutoFocusActivity"/>
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"

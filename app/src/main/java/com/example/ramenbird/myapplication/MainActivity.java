@@ -1,4 +1,4 @@
-package com.example.ramenbird.myapplication.widget_practice;
+package com.example.ramenbird.myapplication;
 
 import android.app.Activity;
 import android.graphics.drawable.BitmapDrawable;
@@ -8,9 +8,6 @@ import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-
-import com.example.ramenbird.myapplication.R;
 
 import static android.R.attr.radius;
 

@@ -1,10 +1,12 @@
 package com.example.ramenbird.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -19,8 +21,8 @@ import com.example.ramenbird.myapplication.widget_practice.recycler_view.Recycle
 public class StartActivity extends AppCompatActivity {
     static final Object[] w1 = new Object[]{
            "recycler view animator", RecyclerViewPractise2.class,
-           "auto input method pop up", AutoFocusActivity.class,
-           "how is on click called", Main2Activity.class
+           "how is on click called", Main2Activity.class,
+           "how content menu works",
     };
 
     @Override
@@ -42,7 +44,7 @@ public class StartActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setClass(StartActivity.this, (Class<?>) w1[position * 2 + 1]);
+                        intent.setClassName(StartActivity.this, "com.example.ramenbird.myapplication.widget_practice.recycler_view.RecyclerViewPractise2");
                         startActivity(intent);
                     }
                 });
@@ -70,5 +72,10 @@ public class StartActivity extends AppCompatActivity {
             itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                    ViewGroup.LayoutParams.WRAP_CONTENT));
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
     }
 }
